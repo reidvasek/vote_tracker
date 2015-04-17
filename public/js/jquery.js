@@ -84,28 +84,23 @@ $.ajax({
 		
 		renderCat();//render pics
 	});
-// var updateChart = function(left,right){
+
 var chartData= [
 {
 	value:1,
 	color:"red",
 	highlight:"yellow",
-	label:"Cat"
 },
 {
 	value:1,
 	color:"blue",
 	highlight:"green",
-	label:"more cat"
  }
 ]
 var newChart = document.getElementById('canvas1').getContext('2d');
 
 var chart = new Chart(newChart).Doughnut(chartData);
 console.log(chart);
-
-// };
-
 
 }).fail(function(err) {
     console.log(err);
