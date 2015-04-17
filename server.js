@@ -6,8 +6,7 @@ var app = express();
 app.use(express.static(__dirname + '/public'));//makes files in our public directory available from the root of the directory
 
 app.get('/secret', function(request, response) {
-  response.status(200).send('<h1>Hello Stranger!</h1> <p> You have stumbled
-  	upon a secret file in the food game!</p>');
+  response.status(200).send('<h1>Hello Stranger!</h1> <p> You have stumbled upon a secret file in the food game!</p>');
 });
 
 
