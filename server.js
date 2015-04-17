@@ -12,7 +12,7 @@ app.get('/secret', function(request, response) {
 
 
 app.get('/*', function(req, res) {
-  res.status(404).send('<h1>Error 404: could not find page</h1>');
+  res.status(404).sendFile(__dirname+'/Public/404.html');
 });
 
 app.listen(process.env.PORT || 3000, function() {
